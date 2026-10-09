@@ -400,3 +400,19 @@ html.xray .xnote b{display:block;font-family:var(--mono);font-size:11px;letter-s
 .theme-rl .nav a{color:#fff}
 @media (max-width:1100px){.services{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:760px){.tldr{padding:24px 20px}.tldr dl{grid-template-columns:1fr;gap:20px}.services{grid-template-columns:1fr}.hero-proof{font-size:14px}}
+
+.theme-hs{--paper:#F1ECE3;background:#F1ECE3}
+.theme-hs .case-hero,.theme-hs .s,.theme-hs .tldr{--k:#006BA6}
+.theme-hs .s-dark{--bg:#2A2622;--k:#4CC3F0;--card:#35302B;--cardline:#45403A;--line:#45403A}
+
+/* ---------- Wordmark ---------- */
+.brand{align-items:baseline;gap:14px}
+.brand .wm{font-family:var(--display);font-weight:650;font-size:22px;letter-spacing:-.022em;color:inherit}
+.brand .tt{position:relative;display:inline-block}
+.brand .tt i{position:absolute;left:50%;top:.36em;width:.19em;height:.19em;margin-left:-.095em;background:var(--accent);border-radius:.03em;transform:rotate(18deg);transition:transform .35s ease}
+.brand:hover .tt i{transform:rotate(0deg)}
+.brand .role{font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);padding-left:14px;border-left:1px solid var(--line);line-height:1.1}
+.theme-inv .brand .tt i,.theme-rl .brand .tt i{background:#F0674F}
+.theme-inv .brand .role,.theme-rl .brand .role{color:#AAB4C0;border-color:#2C2C36}
+@media (max-width:760px){.brand .role{display:none}.brand .wm{font-size:19px}}
+@media (prefers-reduced-motion:reduce){.brand .tt i{transition:none}}
