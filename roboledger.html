@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RoboLedger case study — Natalia Ulitina, product designer</title>
+<meta name="description" content="Redesigning an iOS finance tracker for robotics teams to current iOS: every state designed, sheet-based entry, honest paywall and a tokenised component library.">
+<link rel="canonical" href="https://nataliaulitina.github.io/roboledger.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="RoboLedger case study — Natalia Ulitina, product designer">
+<meta property="og:description" content="Redesigning an iOS finance tracker for robotics teams to current iOS: every state designed, sheet-based entry, honest paywall and a tokenised component library.">
+<meta property="og:url" content="https://nataliaulitina.github.io/roboledger.html">
+<meta property="og:image" content="https://nataliaulitina.github.io/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#EFF1F3">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="bricolage.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="hanken-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="site.css">
+<script src="site.js" defer></script>
+</head>
+<body class="theme-rl">
+<a class="skip" href="#main">Skip to content</a>
+<div class="xgrid" aria-hidden="true"><div class="wrap"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+<header class="site-head"><div class="wrap">
+<a class="brand" href="index.html" aria-label="Natalia Ulitina, home"><span class="mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span>Natalia Ulitina</span></a>
+<nav class="nav" aria-label="Main"><a href="index.html#work">Work</a><a class="hide-sm" href="index.html#services">Services</a><a class="hide-sm" href="index.html#about">About</a><a class="pill" href="index.html#contact">Let's talk</a></nav>
+</div></header><main id="main"><section class="case-hero"><div class="wrap">
+<a class="back" href="index.html#work">← All work</a>
+<p class="kicker">07 · iOS finance app · Redesign</p>
+<h1 class="h1">An iOS app from 2017, brought to 2026.</h1>
+<p class="lead">RoboLedger tracks what a robotics team spends and earns over a season, so it can report to sponsors and grant bodies. The app worked, but it was built to old iOS patterns, and in places it got the money wrong.</p>
+<dl class="meta"><div><dt>Role</dt><dd>Sole product designer: UX, UI, system</dd></div><div><dt>Product</dt><dd>iOS finance tracker for robotics teams</dd></div><div><dt>Scope</dt><dd>20 screens · every state</dd></div><div><dt>System</dt><dd>40 tokens · 12 text styles · 12 components</dd></div><div><dt>Platform</dt><dd>iOS · 393 × 852</dd></div></dl>
+</div></section><section class="tldr-wrap"><div class="wrap"><div class="tldr" data-spec="Summary · the case in 30 seconds">
+<p class="kicker">The case in 30 seconds</p>
+<dl><div><dt>The problem</dt><dd>The expenses screen filtered by income categories, totals read $0 above a full list, a one-of-five choice was drawn as checkboxes, and red and green were the only way to tell income from spending.</dd></div><div><dt>What I did</dt><dd>Rebuilt it to current iOS: entry in a sheet with a detent, a labelled tab bar, every state of the core screen, a two-step onboarding and an honest paywall, all built from one tokenised library.</dd></div><div><dt>The result</dt><dd>A ship-ready file a developer can build from: 20 screens made entirely of component instances, with a Reduce Transparency fallback built into the bars.</dd></div></dl>
+<a class="tldr-more" href="#story">Read the full story &darr;</a></div></div></section><div id="story"></div><section class="s s-dark"><div class="wrap stack"><div class="sec-head" style="margin-bottom:8px"><p class="kicker">01 — The app</p><p class="lead strong">Twenty screens, every state, one library: sheets with detents, a labelled tab bar and accessibility built into the system rather than added afterwards.</p></div><figure class="fig board"><img src="rl-hero.webp" alt="Four RoboLedger screens: expenses with a monthly limit, add expense, the dashboard ring and the Pro paywall" width="1600" height="1300" loading="lazy" decoding="auto"></figure></div></section><section class="s s-dark s-deep"><div class="wrap stack"><div class="sec-head" style="margin-bottom:8px"><p class="kicker">02 — Every state, not just the happy one</p><p class="lead strong">Empty, no limit, within limit, over limit: the same components telling four different truths.</p></div><figure class="fig board"><img src="rl-states.webp" alt="The expenses screen in four states: empty, no limit set, within limit, over limit" width="1600" height="1200" loading="lazy" decoding="auto"></figure></div></section><section class="s s-dark"><div class="wrap stack"><div class="sec-head" style="margin-bottom:8px"><p class="kicker">03 — Amount first, category required</p><p class="lead strong">The amount takes focus at once and the keypad is the whole lower half. A one-of-five choice now reads as one of five, and every expense needs a category, because it has to be reportable.</p></div><figure class="fig board"><img src="rl-add.webp" alt="The add-expense sheet: keypad-first amount entry and a single-select category list" width="1600" height="1200" loading="lazy" decoding="auto"></figure></div></section><section class="s s-dark s-deep"><div class="wrap stack"><div class="sec-head" style="margin-bottom:8px"><p class="kicker">04 — Numbers a sponsor can read</p><p class="lead strong">Every figure is an amount, not just a share. Red and green are retired: they are the pair colour-vision deficiency affects most, so every row carries a label and an amount instead.</p></div><figure class="fig board"><img src="rl-report.webp" alt="Dashboard with net amount in a ring, and the income list with labelled sources" width="1600" height="1200" loading="lazy" decoding="auto"></figure></div></section><section class="s s-dark"><div class="wrap stack"><div class="sec-head" style="margin-bottom:8px"><p class="kicker">05 — Two steps, then an honest paywall</p><p class="lead strong">Onboarding asks for a team name and a limit, nothing else. The paywall shows both plans, prices the annual one per month, and closes with one tap.</p></div><figure class="fig board"><img src="rl-funnel.webp" alt="Onboarding in two steps, the limit setup, the paywall in context and the full plan comparison" width="1600" height="1200" loading="lazy" decoding="auto"></figure></div></section><section class="s s-dark s-deep"><div class="wrap stack"><div class="sec-head" style="margin-bottom:8px"><p class="kicker">06 — A library a developer can build from</p><p class="lead strong">16 colour tokens and 24 spacing, radius and size tokens, 12 text styles and 12 components with variants. Every screen is made of instances.</p></div><figure class="fig board"><img src="rl-system.webp" alt="RoboLedger design system: colour tokens, type scale, transaction row, limit cards, tab bar with a Reduce Transparency variant" width="1600" height="1300" loading="lazy" decoding="auto"></figure></div></section><section class="s s-dark"><div class="wrap stack"><div class="sec-head"><p class="kicker">In short</p><h2 class="h2">The same app, now telling the truth about the money.</h2><p class=lead>Platform fluency was the point: current iOS patterns where they help, and the numbers a sponsor reads made impossible to misread.</p></div><div class="next"><span class="small">Natalia Ulitina · sole designer</span><a href="purchase-wise.html"><span>Next case</span><b>Purchase Wise →</b></a></div></div></section></main><section class="s s-dark contact" id="contact" data-spec="Footer · dark band · the page ends on a strong note"><div class="wrap">
+<p class="kicker">Contact</p>
+<h2 class="h1" style="margin-top:20px">Tell me about your chaos.</h2>
+<p class="lead">A tangled product, a deadline, a brief that doesn't quite add up yet: that's usually where the best projects start. I'm available full-time for new work.</p>
+<div class="btns"><a class="btn btn-primary" href="mailto:natalieanglichanka@gmail.com">Email me <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn" href="https://www.upwork.com/freelancers/~018b4f9fb28a31edcb" rel="noopener" target="_blank">Hire me on Upwork ↗</a></div>
+<p class="mailline"><span class="addr">natalieanglichanka@gmail.com</span><button type="button" class="copy" data-copy="natalieanglichanka@gmail.com" aria-label="Copy email address">Copy</button></p>
+<nav class="elsewhere" aria-label="Elsewhere"><a href="https://www.linkedin.com/in/natalia-ulitina-0a97a8344/" rel="noopener" target="_blank">LinkedIn ↗</a><a href="https://www.behance.net/nataliaulitina" rel="noopener" target="_blank">Behance ↗</a></nav>
+<div class="foot"><span>© 2026 Natalia Ulitina · Product designer</span><span>Designed and built with care · <button type="button" class="xray-toggle" aria-pressed="false"><span class="xray-label">See how this page is built</span> ◐</button></span></div>
+</div></section>
+</body>
+</html>
