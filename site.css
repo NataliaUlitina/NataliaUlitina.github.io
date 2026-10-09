@@ -343,3 +343,10 @@ html.xray .xnote b{display:block;font-family:var(--mono);font-size:11px;letter-s
   .more-work{grid-template-columns:1fr 1fr}
   .case-card.wide{display:flex}
 }
+
+/* ---------- Upwork proof strip ---------- */
+.proof{list-style:none;margin:4px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.proof li{display:inline-flex;align-items:center;gap:7px;min-height:38px;padding:0 16px;border:1px solid var(--line);border-radius:999px;background:var(--white);font-size:15px;color:var(--ink-2)}
+.proof li b{color:var(--ink);font-weight:600}
+.proof li svg{width:16px;height:16px;color:var(--accent)}
+.proof li.via{border:none;background:none;padding:0 4px;font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase}
